@@ -76,8 +76,7 @@ String& String::setString(const char* string) {
 String& String::setStr() {
 	cout << "Введте строку: ";
 	char str[255];
-	cin >> str;
-	cin.ignore(35768, '\n');
+	gets_s(str);
 	this->setString(str);
 	return *this;
 }
